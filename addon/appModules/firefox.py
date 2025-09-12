@@ -304,7 +304,7 @@ class toolsBarDialog(wx.Dialog):
 	def __init__(self, parent):
 		super(toolsBarDialog, self).__init__(parent, title="")
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
-		self.listBox = wx.ListBox(self, wx.NewId(), style=wx.LB_SINGLE, size=(300, 150))
+		self.listBox = wx.ListBox(self, wx.ID_ANY, style=wx.LB_SINGLE, size=(300, 150))
 		mainSizer.Add(self.listBox)
 		self.Bind(wx.EVT_LISTBOX, self.onListBox, self.listBox)
 		buttonsSizer = wx.BoxSizer(wx.HORIZONTAL)
